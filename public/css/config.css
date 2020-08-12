@@ -1,0 +1,23 @@
+:root {
+    --primary-color: #d3f8f2;
+    --primary-darker:#3EE17F;
+    --secondary-color: #a9d3f9;
+    --tertiary-color: #e4c1f9;
+    --quaternary-color: #f649c1;
+    --light-contrast-color:#ede7b1
+}
+
+*,button,input {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand',sans-serif;
+    z-index: 3;
+    outline: 0;
+}
+
+header {
+    background-image: url('/public/dist/assets/header-background.png');
+    background-size: cover;
+}
+

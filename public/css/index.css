@@ -1,0 +1,157 @@
+header .text-logo h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 180px;
+}
+
+header section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+header section .text-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+header section .search-container {
+    display: flex;
+    flex-direction: row;
+    position:relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+    margin-top: 10px;
+    height: 60px;
+    border-radius: 1rem;
+    border-bottom: 3px solid #fff;
+    border-top: 3px solid #fff;
+}
+
+header section .search-container input {
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    transition: 0.5s;
+    width: 90%;
+    height: 100%;
+}
+
+header section .search-container label {
+    position: absolute;
+    font-size: 22px;
+    transition: 0.5s;
+    color: #fff;
+    left: 10%;
+}
+
+header section .search-container .icon i {
+    transform: scale(1.6);
+    margin-left: 15px;
+    color: #fff;
+}
+
+header .options-container {
+    position: relative;
+    top: 80px;
+    width: 100%;
+}
+
+header .options-container ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 24px;
+    letter-spacing: 3px;
+    padding:0;
+    width: 100%;
+    height: 40px;
+}
+
+header .options-container ul li {
+    position: relative;
+    font-style: italic;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 0px 20px 0px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+
+}
+
+header .options-container .active::after {
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: 80px;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    background: #e570f2;
+}
+
+header .options-container ul li:first-child {
+    background: #e570f2;
+    border-color: #e570f2;
+    border-left: 0;
+}
+
+header .options-container ul li:last-child {
+    background: #8de2cb;
+    border-color: #8de2cb;
+    border-right: 0;
+}
+
+header .options-container ul .small {
+    font-size: 20px;
+}
+
+header .options-container ul .products {
+    background: #e249fa;
+    border-color: #e249fa;
+}
+
+header .options-container ul .releases {
+    background: #b641c6 ;
+    border-color: #b641c6 ;
+}
+
+header .options-container ul .promotion {
+    background: #684087 ;
+    border-color: #684087 ;
+}
+
+header .options-container ul .clients {
+    background: #31599f ;
+    border-color: #31599f ;
+}
+
+header .options-container ul .fac {
+    background: #04979e ;
+    border-color: #04979e ;
+}
+
+header .options-container ul .about {
+    background: #48c4c6 ;
+    border-color: #48c4c6 ;
+}
+
+.root {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
