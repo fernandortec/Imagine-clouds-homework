@@ -26,53 +26,130 @@
         </section>
         <div class="options-container">
             <ul>
-                <li class="active">Home</li>
-                <li class="products" >Products</li>
-                <li class="releases">Releases</li>
-                <li class="promotion">Promotion</li>
-                <li class="clients">Our clients</li>
-                <li class="fac">FAC</li>
-                <li class="about">About Us</li>
+                <li>Home</li>
+                <li onclick="redirect('products')" class="products"> Products</li>
+                <li onclick="redirect('relesaes')" class="releases">Releases</li>
+                <li onclick="redirect('promotion')" class="promotion">Promotion</li>
+                <li onclick="redirect('clients')" class="clients">Our clients</li>
+                <li onclick="redirect('fac')" class="fac">FAC</li>
+                <li onclick="redirect('about')" class="about">About Us</li>
                 <li>Contact Us</li>
             </ul>
-        </div>                 
+        </div>                
     </header>
-    <div class="root">
-            
+    <div id="square"></div> 
+
     <div class="super-deals">
-        <ul>
-            <li>
-                <div class="product"></div>
-            </li>
-                <div class="product"></div>
-            </li>
-                <div class="product"></div>
-            </li>
-                <div class="product"></div>
-            </li>
-                <div class="product"></div>
-            </li>
-        </ul>
+        <div class="super-text">
+            <h1>Super deals</h1>
+            <div class="circles"></div>
+        </div>
+            <ul>
+                <li class="animation">
+                    <div class="product">
+                        <i class="fas fa-tags" id="promotion"></i>
+                        <img src="../dist/assets/Pantufas.jpg" alt="Product">
+                        <div class="footer">
+                            <p> Pantufas da argentina</p>
+                            <a href="">Comprar  </a>
+                        </div>
+                    </div>    
+                </li>
+                <li class="animation">
+                    <div class="product">
+                               <i class="fas fa-tags" id="promotion"></i>
+                        <img src="../dist/assets/abajur.jpg" alt="Product">
+                        <div class="footer">
+                            <p> Abajur</p>
+                            <a href="">Comprar  </a>
+                        </div>
+                    </div>    
+                </li>
+                <li class="animation">
+                    <div class="product">
+                        <i class="fas fa-tags" id="promotion"></i>
+                        <img src="../dist/assets/bolsinha.jpg" alt="Product">
+                        <div class="footer">
+                            <p> Bolsinha</p>
+                            <a href="">Comprar  </a>
+                        </div>
+                    </div>    
+                </li>
+                <li class="animation">
+                    <div class="product">
+                        <i class="fas fa-tags" id="promotion"></i>
+                        <img src="../dist/assets/guardachuva.jpg" alt="Product">
+                        <div class="footer">
+                            <p> Guarda-chuva</p>
+                            <a href="">Comprar  </a>
+                        </div>
+                    </div>    
+                </li>
+                <li class="animation">
+                    <div class="product">
+                        <i class="fas fa-tags" id="promotion"></i>
+                        <img src="../dist/assets/mouse.jpg" alt="Product">
+                        <div class="footer">
+                            <p> Mouse</p>
+                            <a href="">Comprar  </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
     </div>
 <!--comentario--> 
-
     <div class="our-products">
-        <li>
-            <div class="product"></div>
-        </li>
-        <li>
-            <div class="product"></div>
-        </li>
-        <li>
-            <div class="product"></div>
-        </li>
-        <li>
-            <div class="product"></div>
-        </li>
-        <li>
-            <div class="product"></div>
-        </li>
-    </div>
+        <div class="super-products">
+            <h1>Our products</h1>
+            <div class="circles"></div>
+        </div>
+            <ul>
+                <li class="animation">
+                    <div class="product">
+                        <img src="../dist/assets/meinhas.jpg" alt="Product">
+                        <div class="footer">
+                            <p> Meia light</p>
+                            <a href="">Comprar  </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="animation">
+                    <div class="product">
+                        <img src="../dist/assets/meinhas2.jpg" alt="Product">
+                        <div class="footer">
+                            <p> Meia dark</p>
+                            <a href="">Comprar</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="animation">
+                    <div class="product">
+                        <img src="../dist/assets/roupasparacachorros.jpg" alt="Product">
+                        <div class="footer">
+                            <p> Dog Outfit !!</p>
+                            <a href="">Comprar</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="animation">
+                    <div class="product">
+                        <img src="../dist/assets/tenis.png" alt="Product">
+                        <div class="footer">
+                            <p> Tenis branco e verde</p>
+                            <a href="">Comprar  </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="animation">
+                    <div class="product">
+                        <img src="../dist/assets/tenis2.jpg" alt="Product">
+                        <div class="footer">
+                            <p> Tenis azul e verde</p>
+                            <a href="">Comprar  </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
     </div>
 
     <script src="https://kit.fontawesome.com/f90dab5b1d.js" crossorigin="anonymous"></script>

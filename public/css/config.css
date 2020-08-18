@@ -7,17 +7,124 @@
     --light-contrast-color:#ede7b1
 }
 
+html,body {
+    height: 100vh;
+}
+
 *,button,input {
     border: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Quicksand',sans-serif;
-    z-index: 3;
+    font-family: 'Quicksand', sans-serif;
     outline: 0;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul li:hover {
+    cursor: pointer;
+    transform: scale(1.02);
 }
 
 header {
-    background-image: url('/public/dist/assets/header-background.png');
+    background-image: url(/dist/assets/header-background.png);
+    width: 99vw;
     background-size: cover;
 }
 
+header section h1 {
+    color: #fff;
+    font-size:40px;
+    font-style: italic;
+}
+header section {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    border-radius: 0.3rem;
+}
+
+header section .search-container {
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    height: 60px;
+    border-radius:0.3rem;
+    border-bottom: 3px solid #fff;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header section .search-container input {
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    margin-left:10px;
+    height:100%;
+    transition: 0.5s;
+    width: 100%;
+}
+
+header section .search-container label {
+    position: absolute;
+    font-size: 22px;
+    color: #fff;
+    transition: 0.5s;
+    top: -12px;
+}
+
+header section .search-container input:valid ~ label {
+    color:var(--secondary-color);
+    top: -12px;
+}
+
+header section .search-container i {
+    color:#fff;
+}
+
+header section .cart i {
+    transform:scale(3);
+    color:#fff;
+}
+
+@media(max-width: 768px){
+    header {
+        flex-direction: column;
+        height: 40%;
+        width: 99vw;
+    }
+    header section {
+        display: flex;
+        flex-direction: column;
+    }
+    .cart i {
+        margin-top:100px;
+    }
+    header section .search-container {
+        width: 300px;
+    }
+    header section .search-container input {
+        width: 100%;
+    }
+    
+    header section .search-container label {
+        width: 300px;
+        margin-left: 60px;
+    }
+    .super-deals {
+        margin-top: 550px;
+    }
+
+}
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;;
+}
