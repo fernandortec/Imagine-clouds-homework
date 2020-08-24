@@ -216,7 +216,7 @@ footer .social-icons i {
 @media(max-width: 768px){
     header {
         flex-direction: column;
-        height: 40%;
+        height: 400px;
         width: 99vw;
     }
     header section {
