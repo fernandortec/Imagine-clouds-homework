@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/config.css">
+    <link rel="stylesheet" href="../css/clients.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <section>
+            <div class="text-logo">
+                <h1>Imagine Clouds</h1>
+            </div>
+            <div class="search-container">
+                <div class="icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <input type="text" id="search" name="search" autocomplete="off" required>
+                <label for="search"> Search for our products </label>
+            </div>
+            <div class="cart">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </section>
+         <div class="options-container">
+            <ul>
+                <li onclick="redirect('index')" >Home</li>
+                <li onclick="redirect('products')" class="products"> Products</li>
+                <li onclick="redirect('releases')" class="releases active">Releases</li>
+                <li onclick="redirect('promotion')" class="promotion">Promotion</li>
+                <li onclick="redirect('clients')" class="clients">Our clients</li>
+                <li onclick="redirect('fac')" class="fac">FAC</li>
+                <li onclick="redirect('about')" class="about">About Us</li>
+                <li onclick="redirect('contact')" >Contact Us</li>
+            </ul>
+        </div>             
+    </header>
+    <div id="square"></div>
+
+    <div class="grid-box">
+        <div class="grid">
+            <div class="user">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="user-info">
+                <h2>Ronaldinho Beira mar</h2>
+                <p>ronaldinho@beiramar.com</p>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="user">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="user-info">
+                <h2>Miguel emanuel</h2>
+                <p>miguel@ligeiro.com</p>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="user">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="user-info">
+                <h2>Everson Borgers</h2>
+                <p>everson@microondas.com</p>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="user">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="user-info">
+                <h2>Alek para de fumar</h2>
+                <p>alek@aspiradordepo.com</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="links">
+            <h1><a>SUPPORT:</a></h1>
+            <h1><a>FAQ</a></h1>
+            <h1><a>CONTACT US</a> </h1>
+        </div>
+        <div class="header">
+            <h1>IMAGINE CLOUDS</h1> 
+            <div class="social-icons">
+                <a href="https://www.facebook.com/esporteinterativo/videos/965122983971940/"><i class="fab fa-facebook"></i></a><!--Logo facebook-->
+                <a href="https://www.instagram.com/southamericamemes/"><i class="fab fa-instagram"></i></a> <!--Logo Instagram-->
+                <a href="https://twitter.com/maiconkusterk"><i class="fab fa-twitter"></i></a> <!--Logo Twitter-->
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/f90dab5b1d.js" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

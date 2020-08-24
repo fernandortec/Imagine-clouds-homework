@@ -36,3 +36,4 @@ function makeItWhite(){
 function redirect(redirect){
     window.location.href = `${redirect}.html`;
 }
+

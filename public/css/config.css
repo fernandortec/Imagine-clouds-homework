@@ -28,8 +28,22 @@ ul li:hover {
     transform: scale(1.02);
 }
 
+ul {
+    list-style: none;
+}
+
+#square {
+    height: 40px;
+    width: 40px;
+    transform: rotate(45deg);
+    margin-top: 47px;
+    z-index: 0;
+    margin-left:98px;
+    background-color:#e570f2;
+}
+
 header {
-    background-image: url(/dist/assets/header-background.png);
+    background-image: url(../dist/assets/header-background.png);
     width: 99vw;
     background-size: cover;
 }
@@ -87,10 +101,117 @@ header section .search-container i {
     color:#fff;
 }
 
+
 header section .cart i {
     transform:scale(3);
     color:#fff;
 }
+
+
+header .options-container ul{
+    position: absolute;
+    z-index: 1;
+    top: 4%;
+    display: flex;
+    color: #fff;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    width: 99vw;
+    height: 20%;
+}
+
+header .options-container ul li {
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+header .options-container ul li:first-child {
+    background: #e570f2;
+    border-color: #e570f2;
+    border-left: 0;
+}
+
+header .options-container ul li:last-child {
+    background: #8de2cb;
+    border-color: #8de2cb;
+    border-right: 0;
+}
+
+header .options-container ul .products {
+    background: #e249fa;
+    border-color: #e249fa;
+}
+
+header .options-container ul .releases {
+    background: #b641c6 ;
+    border-color: #b641c6 ;
+}
+
+header .options-container ul .promotion {
+    background: #684087 ;
+    border-color: #684087 ;
+}
+
+header .options-container ul .clients {
+    background: #31599f ;
+    border-color: #31599f ;
+}
+
+header .options-container ul .fac {
+    background: #04979e ;
+    border-color: #04979e ;
+}
+
+header .options-container ul .about {
+    background: #48c4c6 ;
+    border-color: #48c4c6 ;
+}
+
+.circles {
+    width: 40%;
+    border-top: 10px dotted #d17ede;
+}
+
+
+footer {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: relative;
+    width: 100vw;
+    height: 400px;
+    margin-top: 50px;
+    background-image: url(../dist/assets/naopeficilprogramar.jpg);
+    background-size:cover;
+}
+
+footer * {
+    color: #000;
+    font-size:38px;
+    font-style: italic;
+}
+
+footer .social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer .social-icons i {
+    color:#3b5998;
+    widows: 40px;
+    height: 40px;
+    margin-bottom: 105px;
+}
+
 
 @media(max-width: 768px){
     header {
@@ -119,12 +240,36 @@ header section .cart i {
     .super-deals {
         margin-top: 550px;
     }
+    
 
-}
-ul {
-    list-style: none;
-}
+    .options-container ul{
+        position: relative;
+        flex-direction: column;
+        margin-top: 56vh;
+    }
 
-a {
-    text-decoration: none;;
+    footer {
+        height: 600px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .social-icons {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer .links {
+        margin-top: 420px;
+    }
+
+    footer .header {
+        width:95%;
+        text-align: center;
+    }
+
+    #square {
+        display: none;
+    }
 }

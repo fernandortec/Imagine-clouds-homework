@@ -1,0 +1,25 @@
+#square {
+    margin-left: 1290px;
+    background:  #04979e;
+}
+.faq {
+    margin-top:120px;
+}
+.topic {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+@media(max-width:768px){
+    .faq {
+        margin-top: 65vh;
+    }
+    .topic {
+        flex-direction: column;
+    }
+    .circles:first-child {
+        display: none;
+    }
+}

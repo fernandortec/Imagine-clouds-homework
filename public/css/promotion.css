@@ -1,0 +1,106 @@
+#square {
+    margin-left:813px;
+    background-color:#684087;
+}
+.products-container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.super-deals .product #promotion{
+    position: absolute;
+    color: darkred;
+    top: -25px;
+    left: -20px;
+    z-index: 2;
+    filter: brightness(120%);
+    transform:scale(2.2);
+}
+
+.super-deals .product #discount {
+    position: absolute;
+    color:green;
+    z-index: 2;
+    top: -85px;
+    left:15px;
+    font-size:32px
+}
+
+.super-deals ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top:60px;
+}
+.super-deals ul li img {
+    width: 100%;
+    height: 200px;
+}
+
+.super-deals ul li .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f5;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5px;
+}
+
+.super-deals ul li {
+    position: relative;
+    width: 10%;
+    box-shadow: 0px 3px 20px 10px lightgray;
+    height: 100%;
+}
+
+.super-deals ul li .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f5;
+    width: 100%;
+    height:100px;
+    padding-bottom: 15px;
+}
+
+.super-deals ul li .footer a {
+    text-align: center;
+    width: 100%;
+    height: 10px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    color: #fff;
+    background: #6633cc;
+}
+
+@media(max-width:768px){
+    .super-deals,.super-deals ul{
+        flex-direction: column;
+        margin-top:0;
+    }
+    .products-container {
+        flex-direction: column;
+        margin-top:65vh;
+        margin-bottom: 0;
+    }
+
+    .circles:first-child {
+        display: none;
+    }
+
+    #first-li {
+        margin: 0;
+    }
+
+    .super-deals ul li {
+        width: 50%;
+        margin-top:75px;
+    }
+
+}
